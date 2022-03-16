@@ -3,8 +3,6 @@ import path from "path";
 import { ProjectConfig } from "./example-1/src/Projectconfig";
 import projectConfig from "./example-1/src/atri.project.config";
 const pathArray: string[] = [];
-const dirModulesPath: string[] = [];
-// (keyof ProjectConfig)[]
 const itmesToLoop: (keyof ProjectConfig)[] = [
   "runtimes",
   "machines",
@@ -12,7 +10,7 @@ const itmesToLoop: (keyof ProjectConfig)[] = [
   "compilers",
   "resolvers",
 ];
-// loop through each elemt and append the corresponding paths to array
+// loop through each element and append the corresponding paths to array
 for (let x of itmesToLoop) {
   projectConfig[x].forEach((element: any) => {
     pathArray.push(element.path);
