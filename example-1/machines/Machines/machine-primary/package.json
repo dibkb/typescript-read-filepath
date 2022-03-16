@@ -1,0 +1,11 @@
+{
+  "name": "machine-primary",
+  "version": "3.6.9",
+  "description": "machine primary ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
